@@ -2,14 +2,16 @@
 
 ## Thin command line interface to `mpd`.
 
-Implemented in python using [`python-mpd`][1] and [`argparse`][2]
+### Usage:
+`mpcli [ COMMAND ] [ ARGS ]`
 
-Both of these modules are available via pypi;
-  `argparse` is scheduled for inclusion in the standard library
-  with Python 2.7.
+If no command is given, the command `commands` is used.
 
-Usage information can be discovered via `mpcli help`.
+Commands are passed directly to mpd through python-mpd.
 
+The results are pretty-printed using Python's pprint module.
+
+### License
 This program is license under the GNU Public License;
   see the file LICENSE.txt for details.
 
